@@ -24,7 +24,7 @@ bot.addCommand(
     })
     const [date, time] = getDate()
     let CMD_HELP = `╭────────────────╮
-						ʟᴇᴠᴀɴᴛᴇʀ
+						MALIK-BOT
 ╰────────────────╯
 
 ╭────────────────
@@ -93,10 +93,11 @@ bot.addCommand(
       }
     })
     const [date, time] = getDate()
-    let msg = `\`\`\`╭═══ LEVANTER ═══⊷
+    let msg = `\`\`\`╭═══MALIK-MEHTAB═══⊷
 ┃❃╭──────────────
 ┃❃│ Prefix : ${PREFIX}
 ┃❃│ User : ${message.pushName}
+┃❃│ Owner : MALIK-MEHTAB
 ┃❃│ Time : ${time}
 ┃❃│ Day : ${date.toLocaleString('en', { weekday: 'long' })}
 ┃❃│ Date : ${date.toLocaleDateString('hi')}
@@ -104,7 +105,7 @@ bot.addCommand(
 ┃❃│ Plugins : ${PLUGINS.count}
 ┃❃│ Ram : ${getRam()}
 ┃❃│ Uptime : ${getUptime('t')}
-┃❃│ Platform : ${getPlatform()}
+┃❃│ Platform : KALI-LINUX
 ┃❃╰───────────────
 ╰═════════════════⊷\`\`\`\n`
 
