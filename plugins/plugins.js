@@ -20,7 +20,7 @@ bot(
     type: 'plugin',
   },
   async (message, match) => {
-    match = match || message.reply_message.text
+    match = match || message.reply_message?.text
     if (!match) return await message.send(lang.plugins.plugin.usage)
     if (match == 'list') {
       const plugins = await getPlugin(message.id)

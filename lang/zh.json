@@ -1104,6 +1104,46 @@
       "quota_used": "已用配额：",
       "remaining": "剩余：",
       "error_prefix": "HEROKU：{0}"
+    },
+    "whoson": {
+      "desc": "列出此群或你的聊天中当前在线的用户。",
+      "usage": "用法：whoson（在群里）| whoson all（所有聊天和联系人）",
+      "scanning": "正在检查 {0} 位用户的在线状态，需要几秒钟...",
+      "none": "目前似乎没有人在线。",
+      "title": "*当前在线（{0}）*\n\n",
+      "item": "{0}. @{1} - {2}\n",
+      "note": "\n_WhatsApp 只会显示愿意公开在线状态的用户。_"
+    },
+    "presence": {
+      "desc": "查看某个用户的实时在线状态。",
+      "usage": "用法：presence <jid|号码|@提及|回复>",
+      "unknown": "未收到 @{0} 的在线状态，对方可能已隐藏或处于离线。",
+      "result": "*在线状态*\n*用户 :* @{0}\n*状态 :* {1}\n*持续 :* {2}\n*最后在线 :* {3}",
+      "states": {
+        "online": "在线",
+        "offline": "离线",
+        "typing": "正在输入",
+        "recording": "正在录音",
+        "unknown": "未知"
+      }
+    },
+    "stalk": {
+      "desc": "跟踪某个用户何时上线或下线。",
+      "usage": "用法：\nstalk <jid|号码|@提及|回复> - 开始跟踪\nstalk check <jid> - 上下线报告\nstalk list - 跟踪列表\nstalk stop <jid|all> - 停止跟踪",
+      "added": "已开始跟踪 @{0}，对方上线或下线时会在此通知你。",
+      "exists": "@{0} 已在跟踪中。",
+      "removed": "已停止跟踪 @{0}。",
+      "removed_all": "已停止跟踪 {0} 位用户。",
+      "not_tracked": "@{0} 不在跟踪列表中。",
+      "empty": "当前没有跟踪任何人。",
+      "list_title": "*跟踪列表（{0}）*\n\n",
+      "list_item": "{0}. @{1} - {2}\n",
+      "report": "*跟踪报告*\n*用户 :* @{0}\n*状态 :* {1}\n*持续 :* {2}\n*最近上线 :* {3}\n*最近下线 :* {4}\n*在线时长（24小时）:* {5}\n*开始跟踪 :* {6}",
+      "history": "\n\n*历史记录*\n{0}",
+      "history_item": "{0} - {1}",
+      "no_history": "尚未记录到上线或下线变化。",
+      "notify_online": "🟢 @{0} 于 {1} 上线",
+      "notify_offline": "🔴 @{0} 于 {1} 下线，在线时长 {2}"
     }
   },
   "api": {

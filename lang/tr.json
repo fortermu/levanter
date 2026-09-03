@@ -1104,6 +1104,46 @@
       "quota_used": "Kullanılan Quota :",
       "remaining": "Kalan :",
       "error_prefix": "HEROKU : {0}"
+    },
+    "whoson": {
+      "desc": "Bu grupta veya sohbetlerinizde şu anda çevrimiçi olanları listeler.",
+      "usage": "Kullanım: whoson (grupta) | whoson all (tüm sohbetler ve kişiler)",
+      "scanning": "{0} kullanıcının durumu kontrol ediliyor, birkaç saniye sürer...",
+      "none": "Şu anda kimse çevrimiçi görünmüyor.",
+      "title": "*Şu anda çevrimiçi ({0})*\n\n",
+      "item": "{0}. @{1} - {2}\n",
+      "note": "\n_WhatsApp yalnızca durumunu paylaşan kullanıcıları gösterir._"
+    },
+    "presence": {
+      "desc": "Bir kullanıcının anlık durumunu kontrol eder.",
+      "usage": "Kullanım: presence <jid|numara|@etiket|yanıt>",
+      "unknown": "@{0} için durum alınamadı, gizliyor ya da çevrimdışı olabilir.",
+      "result": "*Durum*\n*Kullanıcı :* @{0}\n*Durum :* {1}\n*Şu andan beri :* {2}\n*Son görülme :* {3}",
+      "states": {
+        "online": "çevrimiçi",
+        "offline": "çevrimdışı",
+        "typing": "yazıyor",
+        "recording": "kaydediyor",
+        "unknown": "bilinmiyor"
+      }
+    },
+    "stalk": {
+      "desc": "Bir kullanıcının çevrimiçi ve çevrimdışı olduğu anları takip eder.",
+      "usage": "Kullanım:\nstalk <jid|numara|@etiket|yanıt> - takibi başlat\nstalk check <jid> - durum raporu\nstalk list - takip edilenler\nstalk stop <jid|all> - takibi durdur",
+      "added": "@{0} takip ediliyor, çevrimiçi veya çevrimdışı olduğunda burada bildirilecek.",
+      "exists": "@{0} zaten takip ediliyor.",
+      "removed": "@{0} takibi durduruldu.",
+      "removed_all": "{0} kullanıcının takibi durduruldu.",
+      "not_tracked": "@{0} takip edilmiyor.",
+      "empty": "Kimse takip edilmiyor.",
+      "list_title": "*Takip edilenler ({0})*\n\n",
+      "list_item": "{0}. @{1} - {2}\n",
+      "report": "*Takip raporu*\n*Kullanıcı :* @{0}\n*Durum :* {1}\n*Şu andan beri :* {2}\n*Son çevrimiçi :* {3}\n*Son çevrimdışı :* {4}\n*Çevrimiçi süre (24s) :* {5}\n*Takip başlangıcı :* {6}",
+      "history": "\n\n*Geçmiş*\n{0}",
+      "history_item": "{0} - {1}",
+      "no_history": "Henüz çevrimiçi/çevrimdışı değişimi kaydedilmedi.",
+      "notify_online": "🟢 @{0} {1} saatinde çevrimiçi oldu",
+      "notify_offline": "🔴 @{0} {1} saatinde çevrimdışı oldu, {2} çevrimiçi kaldı"
     }
   },
   "api": {

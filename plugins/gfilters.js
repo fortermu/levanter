@@ -48,7 +48,7 @@ bot(
       return await message.send(msg.trim())
     }
 
-    if (!message.reply_message || !message.reply_message.txt) {
+    if (!message.reply_message || !message.reply_message.text) {
       return await message.send(lang.plugins.common.reply_to_message)
     }
 
@@ -75,7 +75,7 @@ bot(
       })
       return await message.send(msg.trim())
     }
-    if (!message.reply_message || !message.reply_message.txt) {
+    if (!message.reply_message || !message.reply_message.text) {
       return await message.send(lang.plugins.common.reply_to_message)
     }
     await setFilter('pfilter', match, message.reply_message.text, true, message.id)
