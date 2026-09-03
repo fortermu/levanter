@@ -36,7 +36,7 @@ bot(
       )
     }
 
-    if (!message.reply_message || !message.reply_message.txt) {
+    if (!message.reply_message || !message.reply_message.text) {
       return message.send(lang.plugins.common.reply_to_message)
     }
     await setFilter(message.jid, match, message.reply_message.text, true, message.id)

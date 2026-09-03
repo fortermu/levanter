@@ -1104,6 +1104,46 @@
       "quota_used": "Used Quota :",
       "remaining": "Remaining :",
       "error_prefix": "HEROKU : {0}"
+    },
+    "whoson": {
+      "desc": "List users who are currently online in this group or across your chats.",
+      "usage": "Usage: whoson (in a group) | whoson all (all chats and contacts)",
+      "scanning": "Checking the presence of {0} users, this takes a few seconds...",
+      "none": "No one seems to be online right now.",
+      "title": "*Online now ({0})*\n\n",
+      "item": "{0}. @{1} - {2}\n",
+      "note": "\n_WhatsApp only reports presence for users who share it._"
+    },
+    "presence": {
+      "desc": "Check the live presence of a user.",
+      "usage": "Usage: presence <jid|number|@mention|reply>",
+      "unknown": "No presence received for @{0}, they may hide it or be offline.",
+      "result": "*Presence*\n*User :* @{0}\n*Status :* {1}\n*Since :* {2}\n*Last seen :* {3}",
+      "states": {
+        "online": "online",
+        "offline": "offline",
+        "typing": "typing",
+        "recording": "recording",
+        "unknown": "unknown"
+      }
+    },
+    "stalk": {
+      "desc": "Track when a user comes online or goes offline.",
+      "usage": "Usage:\nstalk <jid|number|@mention|reply> - start tracking\nstalk check <jid> - online/offline report\nstalk list - tracked users\nstalk stop <jid|all> - stop tracking",
+      "added": "Now tracking @{0}, you will be notified here when they come online or go offline.",
+      "exists": "@{0} is already being tracked.",
+      "removed": "Stopped tracking @{0}.",
+      "removed_all": "Stopped tracking {0} user(s).",
+      "not_tracked": "@{0} is not being tracked.",
+      "empty": "No one is being tracked.",
+      "list_title": "*Tracked users ({0})*\n\n",
+      "list_item": "{0}. @{1} - {2}\n",
+      "report": "*Stalk report*\n*User :* @{0}\n*Status :* {1}\n*Since :* {2}\n*Last online :* {3}\n*Last offline :* {4}\n*Online time (24h) :* {5}\n*Tracking since :* {6}",
+      "history": "\n\n*History*\n{0}",
+      "history_item": "{0} - {1}",
+      "no_history": "No online or offline change recorded yet.",
+      "notify_online": "🟢 @{0} came online at {1}",
+      "notify_offline": "🔴 @{0} went offline at {1}, was online for {2}"
     }
   },
   "api": {

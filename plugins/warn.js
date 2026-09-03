@@ -12,7 +12,8 @@ bot(
       return await message.send(lang.plugins.warn.usage)
     let [m, u] = match.split(' ')
     if (m && m.toLowerCase() == 'reset') {
-      u = u && u.endsWith('@s.whatsapp.net') ? u : message.mention[0] || message.reply_message.jid
+      u =
+        u && u.endsWith('@s.whatsapp.net') ? u : message.mention?.[0] || message.reply_message?.jid
       if (!u) return await message.send(lang.plugins.warn.reset_usage)
       const count = await setWarn(
         u,
@@ -28,7 +29,7 @@ bot(
         .replace('&warn', ctx.WARN_LIMIT)
       return await message.send(resetMessage, { contextInfo: { mentionedJid: [u] } })
     }
-    const user = message.mention[0] || message.reply_message.jid
+    const user = message.mention?.[0] || message.reply_message?.jid
     if (!user) return await message.send(lang.plugins.warn.usage)
     const count = await setWarn(user, message.jid, message.id, ctx.WARN_LIMIT)
     if (count > ctx.WARN_LIMIT) {

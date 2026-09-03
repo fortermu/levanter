@@ -7,7 +7,7 @@ bot(
     type: 'user',
   },
   async (message) => {
-    const jid = message.mention[0] || message.reply_message.jid || message.jid
+    const jid = message.mention?.[0] || message.reply_message?.jid || message.jid
     return await message.send(await getJid(jid))
   }
 )
@@ -15,7 +15,7 @@ bot(
 bot(
   {
     pattern: 'left',
-    decs: lang.plugins.left.desc,
+    desc: lang.plugins.left.desc,
     type: 'user',
     onlyGroup: true,
   },
@@ -32,7 +32,8 @@ bot(
     type: 'user',
   },
   async (message) => {
-    const id = message.mention[0] || message.reply_message.jid || (!message.isGroup && message.jid)
+    const id =
+      message.mention?.[0] || message.reply_message?.jid || (!message.isGroup && message.jid)
     if (!id) return await message.send(lang.plugins.block.usage)
     await message.send(lang.plugins.block.status)
     await message.Block(id)
@@ -46,7 +47,8 @@ bot(
     type: 'user',
   },
   async (message) => {
-    const id = message.mention[0] || message.reply_message.jid || (!message.isGroup && message.jid)
+    const id =
+      message.mention?.[0] || message.reply_message?.jid || (!message.isGroup && message.jid)
     if (!id) return await message.send(lang.plugins.unblock.usage)
     await message.Unblock(id)
     await message.send(lang.plugins.unblock.status)
@@ -76,7 +78,7 @@ bot(
   async (message, match) => {
     match = parsedJid(match)[0] || message.jid
     const gid = isGroup(match) ? match : null
-    const id = isUser(match) ? match : message.mention[0] || message.reply_message.jid
+    const id = isUser(match) ? match : message.mention?.[0] || message.reply_message?.jid
     let pp = ''
     try {
       pp = await message.profilePictureUrl(id || gid)

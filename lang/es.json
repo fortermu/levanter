@@ -1104,6 +1104,46 @@
       "quota_used": "Quota Usada :",
       "remaining": "Restante :",
       "error_prefix": "HEROKU : {0}"
+    },
+    "whoson": {
+      "desc": "Lista los usuarios que están en línea en este grupo o en tus chats.",
+      "usage": "Uso: whoson (en un grupo) | whoson all (todos los chats y contactos)",
+      "scanning": "Comprobando la presencia de {0} usuarios, esto tarda unos segundos...",
+      "none": "Nadie parece estar en línea ahora mismo.",
+      "title": "*En línea ahora ({0})*\n\n",
+      "item": "{0}. @{1} - {2}\n",
+      "note": "\n_WhatsApp solo informa la presencia de quienes la comparten._"
+    },
+    "presence": {
+      "desc": "Consulta la presencia en vivo de un usuario.",
+      "usage": "Uso: presence <jid|número|@mención|respuesta>",
+      "unknown": "No se recibió presencia de @{0}, puede ocultarla o estar desconectado.",
+      "result": "*Presencia*\n*Usuario :* @{0}\n*Estado :* {1}\n*Desde :* {2}\n*Última vez :* {3}",
+      "states": {
+        "online": "en línea",
+        "offline": "desconectado",
+        "typing": "escribiendo",
+        "recording": "grabando",
+        "unknown": "desconocido"
+      }
+    },
+    "stalk": {
+      "desc": "Registra cuándo un usuario se conecta o se desconecta.",
+      "usage": "Uso:\nstalk <jid|número|@mención|respuesta> - iniciar seguimiento\nstalk check <jid> - informe de conexión\nstalk list - usuarios seguidos\nstalk stop <jid|all> - detener seguimiento",
+      "added": "Siguiendo a @{0}, te avisaré aquí cuando se conecte o se desconecte.",
+      "exists": "@{0} ya está en seguimiento.",
+      "removed": "Se dejó de seguir a @{0}.",
+      "removed_all": "Se dejó de seguir a {0} usuario(s).",
+      "not_tracked": "@{0} no está en seguimiento.",
+      "empty": "No hay nadie en seguimiento.",
+      "list_title": "*Usuarios seguidos ({0})*\n\n",
+      "list_item": "{0}. @{1} - {2}\n",
+      "report": "*Informe de seguimiento*\n*Usuario :* @{0}\n*Estado :* {1}\n*Desde :* {2}\n*Última conexión :* {3}\n*Última desconexión :* {4}\n*Tiempo en línea (24h) :* {5}\n*Siguiendo desde :* {6}",
+      "history": "\n\n*Historial*\n{0}",
+      "history_item": "{0} - {1}",
+      "no_history": "Aún no se registró ningún cambio de conexión.",
+      "notify_online": "🟢 @{0} se conectó a las {1}",
+      "notify_offline": "🔴 @{0} se desconectó a las {1}, estuvo en línea {2}"
     }
   },
   "api": {

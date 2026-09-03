@@ -1104,6 +1104,46 @@
       "quota_used": "Quota Terpakai :",
       "remaining": "Sisa :",
       "error_prefix": "HEROKU : {0}"
+    },
+    "whoson": {
+      "desc": "Menampilkan pengguna yang sedang online di grup ini atau di seluruh chat.",
+      "usage": "Penggunaan: whoson (di grup) | whoson all (semua chat dan kontak)",
+      "scanning": "Memeriksa kehadiran {0} pengguna, butuh beberapa detik...",
+      "none": "Sepertinya tidak ada yang online sekarang.",
+      "title": "*Online sekarang ({0})*\n\n",
+      "item": "{0}. @{1} - {2}\n",
+      "note": "\n_WhatsApp hanya menampilkan kehadiran pengguna yang membagikannya._"
+    },
+    "presence": {
+      "desc": "Cek kehadiran langsung seorang pengguna.",
+      "usage": "Penggunaan: presence <jid|nomor|@mention|balasan>",
+      "unknown": "Tidak ada data kehadiran untuk @{0}, mungkin disembunyikan atau sedang offline.",
+      "result": "*Kehadiran*\n*Pengguna :* @{0}\n*Status :* {1}\n*Sejak :* {2}\n*Terakhir dilihat :* {3}",
+      "states": {
+        "online": "online",
+        "offline": "offline",
+        "typing": "mengetik",
+        "recording": "merekam",
+        "unknown": "tidak diketahui"
+      }
+    },
+    "stalk": {
+      "desc": "Lacak kapan pengguna online atau offline.",
+      "usage": "Penggunaan:\nstalk <jid|nomor|@mention|balasan> - mulai melacak\nstalk check <jid> - laporan online/offline\nstalk list - pengguna yang dilacak\nstalk stop <jid|all> - berhenti melacak",
+      "added": "Melacak @{0}, kamu akan diberi tahu di sini saat dia online atau offline.",
+      "exists": "@{0} sudah dilacak.",
+      "removed": "Berhenti melacak @{0}.",
+      "removed_all": "Berhenti melacak {0} pengguna.",
+      "not_tracked": "@{0} tidak sedang dilacak.",
+      "empty": "Tidak ada yang sedang dilacak.",
+      "list_title": "*Pengguna yang dilacak ({0})*\n\n",
+      "list_item": "{0}. @{1} - {2}\n",
+      "report": "*Laporan stalk*\n*Pengguna :* @{0}\n*Status :* {1}\n*Sejak :* {2}\n*Online terakhir :* {3}\n*Offline terakhir :* {4}\n*Waktu online (24j) :* {5}\n*Dilacak sejak :* {6}",
+      "history": "\n\n*Riwayat*\n{0}",
+      "history_item": "{0} - {1}",
+      "no_history": "Belum ada perubahan online/offline yang tercatat.",
+      "notify_online": "🟢 @{0} online pada {1}",
+      "notify_offline": "🔴 @{0} offline pada {1}, online selama {2}"
     }
   },
   "api": {
